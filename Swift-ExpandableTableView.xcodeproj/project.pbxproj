@@ -13,6 +13,11 @@
 		DD4ECB0C2530D80400EC7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4ECB0A2530D80400EC7D88 /* Main.storyboard */; };
 		DD4ECB0E2530D80600EC7D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4ECB0D2530D80600EC7D88 /* Assets.xcassets */; };
 		DD4ECB112530D80600EC7D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4ECB0F2530D80600EC7D88 /* LaunchScreen.storyboard */; };
+		DD4ECB212530DAC300EC7D88 /* SelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4ECB1F2530DAC300EC7D88 /* SelectableCell.swift */; };
+		DD4ECB222530DAC300EC7D88 /* SelectableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4ECB202530DAC300EC7D88 /* SelectableCell.xib */; };
+		DD4ECB272530DB0400EC7D88 /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4ECB252530DB0400EC7D88 /* ExpandableCell.swift */; };
+		DD4ECB282530DB0400EC7D88 /* ExpandableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4ECB262530DB0400EC7D88 /* ExpandableCell.xib */; };
+		DD4ECB2C2531742F00EC7D88 /* ExpandableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4ECB2B2531742F00EC7D88 /* ExpandableModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		DD4ECB0D2530D80600EC7D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4ECB102530D80600EC7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4ECB122530D80600EC7D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4ECB1F2530DAC300EC7D88 /* SelectableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCell.swift; sourceTree = "<group>"; };
+		DD4ECB202530DAC300EC7D88 /* SelectableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableCell.xib; sourceTree = "<group>"; };
+		DD4ECB252530DB0400EC7D88 /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		DD4ECB262530DB0400EC7D88 /* ExpandableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandableCell.xib; sourceTree = "<group>"; };
+		DD4ECB2B2531742F00EC7D88 /* ExpandableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,42 @@
 			children = (
 				DD4ECB042530D80400EC7D88 /* AppDelegate.swift */,
 				DD4ECB062530D80400EC7D88 /* SceneDelegate.swift */,
+				DD4ECB2B2531742F00EC7D88 /* ExpandableModel.swift */,
 				DD4ECB082530D80400EC7D88 /* ViewController.swift */,
 				DD4ECB0A2530D80400EC7D88 /* Main.storyboard */,
+				DD4ECB182530DA0000EC7D88 /* Cells */,
 				DD4ECB0D2530D80600EC7D88 /* Assets.xcassets */,
 				DD4ECB0F2530D80600EC7D88 /* LaunchScreen.storyboard */,
 				DD4ECB122530D80600EC7D88 /* Info.plist */,
 			);
 			path = "Swift-ExpandableTableView";
+			sourceTree = "<group>";
+		};
+		DD4ECB182530DA0000EC7D88 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD4ECB1E2530DA7200EC7D88 /* SelectableCell */,
+				DD4ECB192530DA2600EC7D88 /* ExpandableCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD4ECB192530DA2600EC7D88 /* ExpandableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD4ECB252530DB0400EC7D88 /* ExpandableCell.swift */,
+				DD4ECB262530DB0400EC7D88 /* ExpandableCell.xib */,
+			);
+			path = ExpandableCell;
+			sourceTree = "<group>";
+		};
+		DD4ECB1E2530DA7200EC7D88 /* SelectableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD4ECB1F2530DAC300EC7D88 /* SelectableCell.swift */,
+				DD4ECB202530DAC300EC7D88 /* SelectableCell.xib */,
+			);
+			path = SelectableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +167,8 @@
 				DD4ECB112530D80600EC7D88 /* LaunchScreen.storyboard in Resources */,
 				DD4ECB0E2530D80600EC7D88 /* Assets.xcassets in Resources */,
 				DD4ECB0C2530D80400EC7D88 /* Main.storyboard in Resources */,
+				DD4ECB282530DB0400EC7D88 /* ExpandableCell.xib in Resources */,
+				DD4ECB222530DAC300EC7D88 /* SelectableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4ECB092530D80400EC7D88 /* ViewController.swift in Sources */,
+				DD4ECB2C2531742F00EC7D88 /* ExpandableModel.swift in Sources */,
 				DD4ECB052530D80400EC7D88 /* AppDelegate.swift in Sources */,
 				DD4ECB072530D80400EC7D88 /* SceneDelegate.swift in Sources */,
+				DD4ECB212530DAC300EC7D88 /* SelectableCell.swift in Sources */,
+				DD4ECB272530DB0400EC7D88 /* ExpandableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift-ExpandableTableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift-ExpandableTableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
